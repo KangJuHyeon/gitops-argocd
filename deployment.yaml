@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dokdok-server
@@ -13,7 +13,8 @@ spec:
         run: dokdok-server
     spec:
       containers:
-      - image: dokdok-server
+      - image: alinos/dokdok-server:1.0
         name: dokdok-server
+        imagePullPolicy: Always
         ports:
         - containerPort: 4000
