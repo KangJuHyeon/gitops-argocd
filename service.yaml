@@ -9,3 +9,4 @@ spec:
     targetPort: 4000
   selector:
     run: dokdok-server
+  type: NodePort
