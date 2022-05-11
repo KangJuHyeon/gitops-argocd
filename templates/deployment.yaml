@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dokdok-server
+  name: {{ .Release.Name }}
   labels:
-    app: dokdok-server
+    app: {{ .Release.Name }}
 spec:
   replicas: 1
   selector:
