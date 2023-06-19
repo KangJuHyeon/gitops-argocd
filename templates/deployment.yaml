@@ -19,4 +19,4 @@ spec:
         name: helloworld
         imagePullPolicy: Always
         ports:
-        - containerPort: 4000
+        - containerPort: 8080
