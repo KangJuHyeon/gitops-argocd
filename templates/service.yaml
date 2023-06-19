@@ -8,5 +8,5 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-    run: dokdok-server
+    run: helloworld
   type: NodePort
