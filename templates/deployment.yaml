@@ -8,15 +8,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      run: dokdok-server
+      run: helloworld
   template:
     metadata:
       labels:
-        run: dokdok-server
+        run: helloworld
     spec:
       containers:
       - image: {{ .Values.image }}
-        name: dokdok-server
+        name: helloworld
         imagePullPolicy: Always
         ports:
         - containerPort: 4000
