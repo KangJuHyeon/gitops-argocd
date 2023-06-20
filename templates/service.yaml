@@ -8,5 +8,5 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-    run: helloworld
+    run: nodejs_server
   type: NodePort
