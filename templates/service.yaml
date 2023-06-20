@@ -8,5 +8,5 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-    run: nodejs_server
+    run: nodejs-server
   type: NodePort
