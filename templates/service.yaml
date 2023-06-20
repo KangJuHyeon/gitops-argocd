@@ -8,5 +8,5 @@ spec:
     protocol: TCP
     targetPort: 4000
   selector:
-    run: nodejs-server
+    app: {{ .Values.app }}
   type: LoadBalancer
