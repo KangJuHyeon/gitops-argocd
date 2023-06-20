@@ -9,4 +9,4 @@ spec:
     targetPort: 4000
   selector:
     run: nodejs-server
-  type: NodePort
+  type: LoadBalancer
