@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      run: dokdok-server
+      app: gitops-argocd
   template:
     metadata:
       labels:
-        run: dokdok-server
+        app: gitops-argocd
     spec:
       containers:
       - image: {{ .Values.image }}
