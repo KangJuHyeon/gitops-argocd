@@ -1,3 +1,0 @@
-image: alinos/nodejs-server:1.0
-app: gitops-argocd
-replicas: 1
